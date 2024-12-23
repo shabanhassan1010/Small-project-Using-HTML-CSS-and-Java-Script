@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/Small-project-usinf-html--css---js/To-do List/java script/StyleeSheet/stylesheet.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title> Lab Two </title>
+</head>
+<body>
+
+    <section class="crud">
+
+        <div class="head">
+            <h2> To-Do List </h2>
+        </div>
+
+        <div class="inputs">
+            <input type="text" id="title" class="title" placeholder="Title">
+            <div id="titleError"></div>
+            <input type="text" id="desc" class="desc" placeholder="Descraption">
+            <div id="desError"></div>
+
+            <div class="Add">
+                <button id="submit"> Add </button>
+            </div>
+            
+            <div class="Search">
+                <input oninput="searchForItems(this.value)" class="Search" type="text" placeholder="Search By Title"> 
+            </div>
+        </div>
+
+        <div class="Outputs">
+
+            <table class="table">
+                <thead>
+                </thead> 
+
+                <tbody id="table-Body">
+                </tbody>  
+            </table>
+
+        </div>
+
+
+    </section>   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/js/all.min.js" integrity="sha512-1JkMy1LR9bTo3psH+H4SV5bO2dFylgOy+UJhMus1zF4VEFuZVu5lsi4I6iIndE4N9p01z1554ZDcvMSjMaqCBQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="Java Script/script.js"></script>
+</body>
+</html>
