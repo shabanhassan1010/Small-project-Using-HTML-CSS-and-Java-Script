@@ -1,0 +1,146 @@
+.One{
+    color: #ffffff;
+    margin-left: 120px;
+    font-family: Arial, sans-serif;
+    font-size: 10px;             
+    font-weight: bold;            
+    letter-spacing: 2px;          
+    text-transform: uppercase;   
+    margin-right: 60px;
+    justify-content:right
+}
+.blog{
+    color: #ff6000;
+}
+.container1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(36,36,37,1) 0%, rgba(109,108,109,1) 100%);
+    display: inline-block;
+    width: 100%;
+}
+.container2{
+    margin: 40px;
+}
+.meal{
+    width: 25%;
+    float: left;
+    text-align: center;
+    margin: 20px;
+}
+.pic{
+    width: 100%;    
+}
+.clear-fix{
+    clear: both;
+}
+.pragraph3{
+    text-align: left;
+    margin-left: 95px;
+    font-size: 10px;
+    font-weight: 900;
+}
+.mo {
+    display: flex;
+    align-items: center; 
+}
+.mo-pic {
+    width: 30px;
+    background-color: #ff6000;
+    margin-right: 10px; 
+}
+.mo-text {
+    display: flex;
+    flex-direction: column; 
+}
+.mo-name {
+    margin: 0;
+    text-align: left;
+}
+.article {
+    font-size: 9px;
+    width: 50%;
+    text-align: right; 
+    margin-top: 15px; 
+    margin-left: 190px;
+    text-transform: uppercase;
+}
+.date{
+    font-size: 10px;
+    margin-left: 45px;
+    color: #252425;
+}
+.container4{
+    margin: auto;
+    text-align: center;
+}
+.person{
+    display: inline-block;
+    padding: 30px;
+    margin-left: 33px;
+}
+.info{
+    display: inline-block;
+    text-align: left;
+}
+img{
+    width: 200px;
+    margin-left: 90px;
+}
+.pragraph1{
+    font-family: Arial, sans-serif; 
+    color: #f8f6f6;
+    font-size: small;
+    text-align: left;
+}
+h4{
+    text-align: left; 
+    color: #fff; 
+    font-family: Arial, sans-serif; 
+}
+.hr1{
+   background-color: #ffa000;
+   margin-right: 90%;
+   width: 90px; 
+   height: 5px; 
+    border: none; 
+}
+.h6{
+    text-align: left; 
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    color: #ffffff; 
+    font-family: open sans-serif;
+    color: #dadada;
+}
+.correct{
+    color: #dadada;
+    font-size: 12px;
+    font-weight: 100;
+}
+h2{
+    font-size: 48px; 
+    font-weight: bold; 
+    color: #333; 
+    font-family: Arial, sans-serif; 
+}
+.hr2{
+    background-color: #ffa000; 
+    width: 30px; 
+    height: 5px; 
+    border: none; 
+}
+.pragraph2{
+    font-family: Arial, sans-serif; 
+    color: #252425;
+    text-align: center;
+}
+span{
+    color: #252425;
+    font-weight: bold; 
+    font-family: Arial, sans-serif; 
+    margin-top: 15px;
+}
