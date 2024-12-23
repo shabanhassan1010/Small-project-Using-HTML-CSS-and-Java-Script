@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background-color: rgba(16, 16, 16);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(16, 16, 16);
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 2rem 5rem;
+    border: 1px solid antiquewhite;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease; /* Adjusted duration for smoother transition */
+}
+
+a:before {
+    content: 'DOWNLOAD';
+    font-weight: bold;
+    color: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: antiquewhite;
+    transform: translateY(100%);
+    transition: transform 0.5s ease; /* Match transition with hover */
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+a:hover:before {
+    transform: translateY(0); /* Smooth animation on hover */
+}
+
+a:hover {
+    color: antiquewhite; /* Optional: Change text color on hover */
+    border-color: #ffffff; /* Optional: Add a border color change */
+}
