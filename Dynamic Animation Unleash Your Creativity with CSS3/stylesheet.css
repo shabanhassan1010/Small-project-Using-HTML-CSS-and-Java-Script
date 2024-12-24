@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #00008bcb;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper .loader{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 20px;
+    margin: 19%;
+ 
+}
+.loader .loading{
+    background-color: rgb(255, 254, 251);
+    width: 30Px;
+    height: 30px;
+    margin: 0 10px;
+    border-radius: 50px;
+    animation: load 0.9s ease infinite ;
+}
+
+.loader .loading.one{
+    animation-delay: 0.3s ;
+}
+.loader .loading.two{
+    animation-delay: 0.4s ;
+}
+.loader .loading.three{
+    animation-delay: 0.5s ;
+}
+.loader .loading.four{
+    animation-delay: 0.6s ;
+}
+
+@keyframes  load {
+    0%{
+        width:  30px;
+        height: 30px;
+    }
+    50%{
+        width:  20px;
+        height: 20px;
+    }
+    
+}
