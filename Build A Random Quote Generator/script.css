@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #5372f0;
+}
+.wrapper {
+    background: #ffffff;
+    width: 60%;
+    max-width: 600px; /* علشان نمنع العنصر من إنه يكبر زيادة عن اللزوم */
+    height: 60%;
+    max-height: 400px; /* علشان نمنع العنصر من إنه يكبر زيادة عن اللزوم */
+    padding: 30px 30px 25px;
+    border-radius: 20px;
+}
+.wrapper header {
+    font-weight: 800;
+    font-size: 35px;
+    text-align: center;
+    line-height: 1.5; /* علشان نضبط المسافة بين الأسطر */
+}
+.wrapper .content{
+    margin: 35px 0;
+}
+.content .Quote-Area{
+    display: flex;
+    justify-content: center;
+}
+.Quote-Area .quote {
+    font-size: xx-large;
+    text-align: center;
+    word-break: break-all;
+}
+
+.Quote-Area i {
+    font-size: 15px;
+    color: #5372f0; /* علشان نضيف لون للأيقونات */
+}
+.Quote-Area i:first-child{
+    margin: 3px 10px 0 0;
+}
+.Quote-Area i:last-child{
+    display: flex;
+    align-items: flex-end;
+    margin: 0 0 3px 10px;
+}
+.content .author{
+    display: flex;
+    justify-content: flex-start;
+    font-style: italic;
+    margin-left: 24px;
+    margin-top: 10px;
+}
+.author span:first-child{
+    font-family: monospace;
+    margin: -7px 5px 0 0 ;
+}
+
+
+li:hover {
+    color: #2c4fcc; /* علشان نغير لون الأيقونات لما نحط الماوس عليها */
+}
+
+.featuers{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: rgb(215, 214, 214);
+    margin-bottom: 10px;
+}
+.featuers ul{
+    display: flex;
+    gap: 40px;
+    padding: 0;
+}
+.featuers ul li{
+    list-style: none;
+    margin: o 5px;
+    height: 47px;
+    width: 47px;
+    display: flex;
+    color: #5372f0;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid #5372f0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.featuers ul li:hover{
+    color: #fff;
+    background: #5372f0;
+}
+
+.featuers button{
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: rgb(84, 84, 176);
+    color: #ffffff;
+    border-radius: 20px;
+    border: none;
+}
+.featuers button:hover{
+    background-color: #0033b3;
+}
+button.loading{
+    opacity: 0.7;
+    pointer-events: none;
+}
+
