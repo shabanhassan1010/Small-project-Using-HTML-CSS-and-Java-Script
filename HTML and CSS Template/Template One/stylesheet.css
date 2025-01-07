@@ -164,3 +164,26 @@ header .links ul li:not(:last-child) a {
 }
 /* End landing Section */
 
+/* Start Section Two */
+.all{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.section-Two{
+    text-align: center;
+    padding: 25px;
+    border-radius: 2px;
+}
+.section-Two:hover{
+    background-color: #f2c8c8;
+    cursor: pointer;
+}
+.section-Two .icon{
+    color: rgb(40, 189, 90);
+    width: 100px;
+    font-size: 3rem;
+}
+
+/* End Section Two */
+
