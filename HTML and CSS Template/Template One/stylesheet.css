@@ -1,0 +1,166 @@
+/* start Variables */
+:root{
+    --main-color:#10cab7;
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Work Sans", sans-serif;
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+/* Small */
+@media(min-width:768px){
+    .container{
+        width: 750px;
+    }
+}
+/* Medium */
+@media(min-width:992px){
+    .container{
+        width: 970px;
+    }
+}
+/* Large */
+@media(min-width:1200px){
+    .container{
+        width: 1170px;
+    }
+}
+/* End Global Rules */
+
+
+/* Start Components */
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+}
+header .logo{
+    width: 70px;
+}
+header .links{
+    position: relative;
+}
+header .links .icons{
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+header .links .icons span{
+    background-color: rgb(229, 226, 226);
+    margin-bottom: 5px; 
+    height: 3px;
+}
+header .links .icons span:first-child{
+    width: 100%;
+}
+header .links .icons span:nth-child(2){
+    width: 60%;
+    transition: 0.3s;
+}
+header .links:hover .icons span:nth-child(2){ 
+    width: 100%;
+}
+header .links .icons span:last-child{
+    width: 100%;
+}
+header .links ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f6;
+    position: absolute;
+    right: 0;
+    min-width: 200px;
+    top: calc(100% + 15px);
+    display: none;
+    z-index: 1;
+}
+header .links ul::before {
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #f6f6f6 transparent;
+    position: absolute;
+    right: 5px;
+    top: -20px;
+  }
+header .links:hover ul {
+    display: block;
+  }
+header .links ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #8f3434;
+    transition: var(--main-duration);
+  }
+header .links ul li a:hover {
+    padding-left: 25px;
+  }
+header .links ul li:not(:last-child) a {
+    border-bottom: 1px solid #ddd;
+  }
+/* End Components */
+
+/* Start landing Section */
+.landing {
+    background-image: url(./images/mountain.jpg); /* مسار الصورة */
+    background-size: cover; /* تغطية المساحة بالكامل */
+    height: calc(100vh - 64px); /* ارتفاع القسم (ناقص ارتفاع الهيدر إذا كان موجودًا) */
+    position: relative; /* يجعل النص الداخلي يتبع هذا العنصر */
+}
+
+.landing .intro-text {
+    position: absolute; /* يجعل النص يطفو فوق الصورة */
+    left: 50%; /* يضع النص في المنتصف أفقيًا */
+    top: 50%; /* يضع النص في المنتصف رأسيًا */
+    transform: translate(-50%, -50%); /* يحرك النص إلى المركز بدقة */
+    text-align: center; /* توسيط النص */
+    width: 320px; /* عرض النص */
+    max-width: 100%; /* التأكد من أن النص لا يتجاوز الشاشة على الأجهزة الصغيرة */
+}
+
+.landing .intro-text h1 {
+    margin: 0; /* إزالة الهوامش */
+    font-weight: bold; /* نص عريض */
+    font-size: 50px; /* حجم النص الكبير */
+    color: var(--main-color);
+}
+.landing .intro-text p {
+    font-size: 19px;
+    line-height: 1.8;
+    font-weight: 700;
+    color: #3e3e3e;
+}
+
+/* طبقة شفافة فوق الصورة لتحسين وضوح النص */
+.landing::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* تأكد من أن الطبقة فوق الصورة ولكن تحت النص */
+}
+
+.landing .intro-text { /* التأكد من أن النص فوق الطبقة الشفافة */
+    z-index: 2;
+}
+/* End landing Section */
+
