@@ -1,6 +1,7 @@
 const quoteText = document.querySelector('.quote'); 
 const authorName = document.querySelector('.author .name  ')
 const quoteBtn = document.querySelector('button');
+
 soundBtn = document.querySelector('.sound');
 copyBtn = document.querySelector('.copy');
 twitterBtn = document.querySelector('.twitter');
@@ -11,8 +12,8 @@ function randomQuote()
 {
     quoteBtn.classList.add("loading...")
     quoteBtn.innerText = 'Leoding Quote....'
-    fetch("http://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=en")
-        .then(res => res.json()).then(result => {
+    fetch("http://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=en").then(res => res.json()).then(result => 
+        {
          console.log(result);
          quoteText.innerHTML = result.content;
          authorName.innerHTML = result.content;
@@ -25,9 +26,10 @@ quoteBtn.addEventListener('click', randomQuote);
 
 soundBtn.addEventListener('click' , ()=>{
     // SpeechSynthesisUtterance is a web speech api that represents a speech request
-    let utterance = new SpeechSynthesisUtterance(`${quoteText.innerText} by ${authorName.innerHTML}`);
+    let utterance = new SpeechSynthesisUtterance( `${quoteText.innerText} by ${authorName.innerHTML}` );
     speechSynthesis.speak(utterance); //speak method of  speechSynthesis
 })
+
 
 copyBtn.addEventListener('click' , ()=>{
     // copying the quote text on copyBtn click
