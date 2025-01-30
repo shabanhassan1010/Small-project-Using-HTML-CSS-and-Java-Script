@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/* Reset margins and padding */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* General page background */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(57, 67, 124);
+}
+
+/* Container styling */
+.container {
+    padding: 30px;
+    border: 1px solid rgb(239, 238, 238);
+    display: flex; /* Add this */
+    flex-direction: column; /* Add this */
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    height: 260px;
+    transition: height 0.2s ease; /* Fix the typo */
+}
+
+.container.active {
+    height: 530px;
+}
+
+/* Main title styling */
+.Generator h2 {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+}
+
+/* Subtitle styling */
+.Generator h6 {
+    margin-bottom: 20px;
+    color: #666;
+    text-align: center;
+}
+
+/* Input field styling */
+.form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form input:focus {
+    border-color: #007bff;
+}
+
+/* Button styling */
+.form button {
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(46, 173, 50);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: rgb(36, 143, 40);
+}
+
+/* QR Code display area styling */
+.qr-code {
+    display: flex;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease; /* Add this */
+}
+
+.container.active .qr-code {
+    opacity: 1; /* Make QR Code visible */
+    pointer-events: auto; /* Enable interactions */
+}
+
+.qr-code img {
+    max-width: 70%;
+    height: auto;
+}
+
+

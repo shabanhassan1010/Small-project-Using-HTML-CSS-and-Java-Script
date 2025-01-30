@@ -1,0 +1,50 @@
+/* General styling for the container */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Container for the buttons */
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Styling for the buttons */
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* Container for the iframe */
+.map-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Styling for the iframe */
+iframe {
+    width: 100%;
+    max-width: 600px; /* Maximum width for the iframe */
+    height: 400px;
+    border-radius: 10px;
+}
