@@ -27,6 +27,3 @@ document.addEventListener('keydown' , (e)=>{
     }
         
 }) 
-document.addEventListener('keydown' ,(e)=>{
-  console.log(e);
-})
